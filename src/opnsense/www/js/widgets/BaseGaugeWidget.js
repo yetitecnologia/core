@@ -24,8 +24,6 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-// import BaseWidget from 'widget-base';
-
 class BaseGaugeWidget extends BaseWidget {
     constructor() {
         super();

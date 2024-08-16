@@ -24,8 +24,6 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-// import BaseWidget from 'widget-base';
-
 class BaseTableWidget extends BaseWidget {
     constructor(config) {
         super(config);
