@@ -24,9 +24,9 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-import BaseWidget from 'widget-base';
+// import BaseWidget from 'widget-base';
 
-export default class BaseGaugeWidget extends BaseWidget {
+class BaseGaugeWidget extends BaseWidget {
     constructor() {
         super();
 
