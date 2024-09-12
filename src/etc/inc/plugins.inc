@@ -384,3 +384,35 @@ function plugins_xmlrpc_sync()
     }
     return $sync_settings;
 }
+
+function plugins_argument_map(&$map)
+{
+    /* record the caller for a sensible log message */
+    $caller = !empty(debug_backtrace()[1]['function']) ? debug_backtrace()[1]['function'] : 'unknown';
+
+    /* return value signals we have work to do */
+    $ret = true;
+    $tmp = $map;
+
+    if (is_array($map)) {
+        /* no need to deal with this now */
+    } elseif (is_string($map)) {
+        /* backwards compat with single string arguments */
+        $tmp = explode(',', $map);
+        $ret = !!strlen($map);
+    } elseif (!is_null($map)) {
+        log_msg(sprintf('%s: plugin argument map type "%s" not supported', $caller, gettype($map)), LOG_WARNING);
+        $ret = false;
+    }
+
+    if (is_array($tmp)) {
+        $tmp = array_unique(array_filter($tmp));
+        $ret = !!count($tmp);
+    }
+
+    if ($ret) {
+        $map = $tmp;
+    }
+
+    return $ret;
+}
