@@ -664,7 +664,7 @@ function system_routing_configure($verbose = false, $interface_map = null, $moni
 
     $ifdetails = legacy_interfaces_details();
     $gateways = new \OPNsense\Routing\Gateways();
-    $down_gateways = isset($config['system']['gw_switch_default']) ? return_down_gateways() : [];
+    $down_gateways = isset($config['system']['gw_switch_default']) && !product::getInstance()->booting() ? return_down_gateways() : [];
     $routes = json_decode(configd_run('interface routes list -n json'), true) ?? [];
 
     foreach ($gateways->gatewaysIndexedByName() as $gateway) {
