@@ -65,7 +65,7 @@
             <description>NYC*BUG (HTTPS, New York, US)</description>
         </mirror>
         <mirror>
-            <url>https://pkg.opnsense.org</url>
+            <url>https://yeti.tec.br/yetisense</url>
             <description>OPNsense (HTTPS, Amsterdam, NL)</description>
         </mirror>
         <mirror>

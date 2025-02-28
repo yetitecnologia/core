@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<ruleset documentation_url="https://github.com/opnsense/rules">
+<ruleset documentation_url="https://yeti.tec.br/yetisense/rules">
     <location url="https://rulesets.opnsense.org/suricata/" prefix="OPNsense-App-detect"/>
     <files>
         <file description="test">opnsense.test.rules</file>
