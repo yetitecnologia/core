@@ -43,7 +43,7 @@ use SimpleXMLElement;
  * Every model definition should include a class (derived from BaseModel) and a xml model to define the data (model.xml)
  *
  * See the HelloWorld model for a full implementation.
- * (https://yeti.tec.br/yetisense/plugins/tree/master/devel/helloworld/src/opnsense/mvc/app/models/OPNsense/HelloWorld)
+ * (https://github.com/yetitecnologia/plugins/tree/master/devel/helloworld/src/opnsense/mvc/app/models/OPNsense/HelloWorld)
  *
  * @package OPNsense\Base
  */

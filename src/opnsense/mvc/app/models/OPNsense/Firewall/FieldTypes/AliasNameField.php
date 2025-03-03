@@ -51,7 +51,7 @@ class AliasNameField extends BaseField
     {
         $validators = parent::getValidators();
         // Internally reserved keywords
-        //  ref https://yeti.tec.br/yetisense/src/blob/41ba6e29a8d3f862f95f9ab0a1482ef58c4a7cdb/sbin/pfctl/parse.y#L5482
+        //  ref https://github.com/yetitecnologia/src/blob/41ba6e29a8d3f862f95f9ab0a1482ef58c4a7cdb/sbin/pfctl/parse.y#L5482
         $reservedwords = array(
             'all', 'allow-opts', 'altq', 'anchor', 'antispoof', 'any', 'bandwidth', 'binat', 'binat-anchor', 'bitmask',
             'block', 'block-policy', 'buckets', 'cbq', 'code', 'codelq', 'crop', 'debug', 'divert-reply', 'divert-to',

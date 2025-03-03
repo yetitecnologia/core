@@ -46,7 +46,7 @@ function setup_interface($instance)
         if (!does_interface_exist($instance->__devname)) {
             /**
              * XXX: DCO uses non standard matching, normally create should use "ifconfig ovpnX create"
-             * ref: https://yeti.tec.br/yetisense/src/blob/b0130349e8/sys/net/if_ovpn.c#L2392-L2400
+             * ref: https://github.com/yetitecnologia/src/blob/b0130349e8/sys/net/if_ovpn.c#L2392-L2400
              */
             mwexecf('/sbin/ifconfig %s create', [$instance->__devname]);
             mwexecf('/sbin/ifconfig %s group openvpn', [$instance->__devname]);

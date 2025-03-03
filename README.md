@@ -27,7 +27,7 @@ tools to build it.  The build tools for OPNsense are freely available.
 
 Notes on how to build OPNsense can be found in the tools repository:
 
-https://yeti.tec.br/yetisense/tools
+https://github.com/yetitecnologia/tools
 
 Contribute
 ==========

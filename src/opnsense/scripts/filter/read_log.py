@@ -44,7 +44,7 @@ from params import update_params
 
 
 # define log layouts, every endpoint contains all options
-# source : https://yeti.tec.br/yetisense/ports/blob/master/opnsense/filterlog/files/description.txt
+# source : https://github.com/yetitecnologia/ports/blob/master/opnsense/filterlog/files/description.txt
 fields_general = 'rulenr,subrulenr,anchorname,rid,interface,reason,action,dir,ipversion'.split(',')
 
 fields_ipv4 = fields_general + 'tos,ecn,ttl,id,offset,ipflags,protonum,protoname,length,src,dst'.split(',')
