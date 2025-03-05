@@ -115,11 +115,11 @@ CORE_ORIGIN?=		opnsense/${CORE_NAME}
 CORE_PACKAGESITE?=	https://yeti.tec.br/yetisense
 CORE_PRODUCT?=		OPNsense
 CORE_REPOSITORY?=	${CORE_ABI}/latest
-CORE_WWW?=		https://opnsense.org/
+CORE_WWW?=		https://yeti.tec.br/
 
-CORE_COPYRIGHT_HOLDER?=	Deciso B.V.
-CORE_COPYRIGHT_WWW?=	https://www.deciso.com/
-CORE_COPYRIGHT_YEARS?=	2014-2025
+CORE_COPYRIGHT_HOLDER?=	YeTI Tecnologia
+CORE_COPYRIGHT_WWW?=	https://yeti.tec.br/
+CORE_COPYRIGHT_YEARS?=	2024-2025
 
 CORE_DEPENDS_aarch64?=	py${CORE_PYTHON}-duckdb \
 			py${CORE_PYTHON}-numpy \

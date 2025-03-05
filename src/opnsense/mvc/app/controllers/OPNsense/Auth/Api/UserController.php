@@ -129,7 +129,7 @@ class UserController extends ApiMutableModelControllerBase
         $result['user']['otp_uri'] = '';
         if (!empty($result['user']['otp_seed'])) {
             $result['user']['otp_uri'] = sprintf(
-                "otpauth://totp/%s@%s?secret=%s&issuer=OPNsense&image=https://docs.opnsense.org/_static/favicon.png",
+                "otpauth://totp/%s@%s?secret=%s&issuer=OPNsense&image=https://yeti.tec.br/yetisense/imagens/favicon.png",
                 $result['user']['name'],
                 $this->getHostname(),
                 $result['user']['otp_seed']
@@ -187,7 +187,7 @@ class UserController extends ApiMutableModelControllerBase
         return [
             'seed' => $seed,
             'otp_uri_template' => sprintf(
-                "otpauth://totp/%s@%s?secret=%s&issuer=OPNsense&image=https://docs.opnsense.org/_static/favicon.png",
+                "otpauth://totp/%s@%s?secret=%s&issuer=OPNsense&image=https://yeti.tec.br/yetisense/imagens/favicon.png",
                 '|USER|',
                 $this->getHostname(),
                 $seed
